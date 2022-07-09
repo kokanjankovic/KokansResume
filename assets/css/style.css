@@ -81,8 +81,7 @@ html {
 .holder-job li p {   
     line-height: 90px;
     position: relative;
-}
-  
+}  
 .holder-job li p::after {
     content: "";
     position: absolute;
@@ -92,8 +91,7 @@ html {
     background:#fff;
     border-left: 4px solid #3b5998;
     animation: typing 4s steps(10) infinite;
-}
-  
+}  
 @keyframes typing {
     40%,
     60% {
@@ -103,7 +101,6 @@ html {
       left: 0;
     }
 }
-
 .header-text{
     font-size: 80px;
     font-weight: 700;
@@ -114,6 +111,28 @@ html {
 .header p{
     font-size: 2.5rem;
     z-index: 100;
+}
+@media (max-width: 992px) {
+  .holder-text {
+    font-size:32px;    
+  }
+  .header p{
+    font-size: 2rem;
+  }
+  .header-text{
+    font-size: 60px;
+  }
+  .holder-job {
+    line-height: 80px;
+  }  
+}
+@media (max-width: 768px) {
+  .holder-text {
+    font-size:24px;    
+  }
+  .header-text{
+    font-size: 40px;
+  }
 }
 
 /* Navbar */
@@ -261,14 +280,61 @@ html {
 .occupation-data ul li{
   font-size: 1.125rem;
 }
-
+@media (max-width: 992px) {
+  .about h1, .skills h1, .resume h1, .portfolio h1, .contact h1{
+    font-size: 2rem;
+  }
+  .mycard img{
+    width: 50%;
+    height: auto;
+  }
+  .about p{
+    font-size: 1.125rem;
+  }
+  .mycard{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .occupation{
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .occupation-data{
+    margin-left: 150px;
+    display: flex;
+    width:auto;
+    justify-content: center;
+  }
+  .occupation-text{
+    margin-left: 150px;
+    font-size: 1rem;
+    text-align: center;    
+  }  
+}
+@media (max-width: 768px) {  
+  .about p{
+    font-size: 1rem;
+  } 
+  .occupation{
+    margin-top: 1rem;   
+  }  
+  .occupation-text{
+    font-size: 1rem;   
+  }
+  .mycard-text{
+    margin-left: 150px;
+  }
+  .occupation-data{
+    width: auto;
+    justify-content: end ;
+  }
+}
 
 /* Skills section */
 #skills{
-  height: 80vh;
-  background: rgba(0,0,0,0.05);
-
-  
+  height: auto;
+  background: rgba(0,0,0,0.05);  
 }
 .skills{ 
   margin-left: 150px;
@@ -317,8 +383,7 @@ html {
   padding: 5px;   
 }
 #myBar-html{
-  width: 100%; 
-   
+  width: 100%;    
 }
 #myBar-css{
   width: 95%;
@@ -329,7 +394,6 @@ html {
 #myBar-sass{
   width: 70%;
 }
-
 #myBar-bootstrap{
   width: 80%;
 }
@@ -339,13 +403,42 @@ html {
 #myBar-ps-il{
   width: 60%;
 }
-
+@media (max-width: 992px){
+  .skills p, .portfolio p{
+    font-size: 1.25rem;
+  }
+  .myskills{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  #myProgress{
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+  #myProgress p{
+    font-size: 12px;
+  }
+  #myBar-html,#myBar-css, #myBar-js, #myBar-sass, #myBar-bootstrap,
+  #myBar-figma, #myBar-webflow, #myBar-ps-il{ 
+    height: 15px;
+    font-size: 12px;
+}
+}
+@media (max-width: 768px){
+  #myProgress{
+    width: 60%;
+  }
+  .skills p{
+    font-size: 1rem;
+  }
+}
 /* Resume section */
 #resume{
-  height: 200vh;
+  height: auto;
+  
 }
-.resume{
- 
+.resume{ 
   margin-left: 150px;
   margin-top: 3rem;
   padding-top: 1rem;
@@ -388,8 +481,7 @@ html {
   border: solid 2px #3b5998;
   border-radius: 50%;
   background: #fff;
-  left: -27px;
-  
+  left: -27px;  
 }
 .resume-item ul li{
   margin-left: 2rem;
@@ -399,7 +491,22 @@ html {
   line-height: 1.25;
   padding-bottom: 0.5rem;
 }
+@media (max-width:992px) {
+  .resume p{
+    font-size: 1.125rem;
+  }
+  .resume-container{
+    flex-direction: column;
+  }
+  .h3{
+    font-size: 1.25rem;
+  }
+  .resume-item h5{
+    font-size: 1rem;
+  }
 
+}
+/* Portfolio section */
 #portfolio{
   margin-top: 3rem;
   height: 100vh;
@@ -409,14 +516,15 @@ html {
   position: relative;
   margin-left: 150px;
 }
+
+/* Contact section */
 #contact{
-  height: 70vh;
+  height: auto;
   max-width: 1400px;
 }
 .contact{
   margin-top: 3rem;
-  margin-left: 150px;
-  
+  margin-left: 150px;  
   position: relative;
   display: flex;
   flex-direction: column;
@@ -438,6 +546,9 @@ html {
   padding-right: 20px;
   padding-top: 1rem;
 }
+.email-form{
+  width: 100%;
+}
 .address{
   display: flex;
   flex-direction: column;
@@ -446,8 +557,7 @@ html {
   width: 830px;
 }
 .name{
-  display: flex;
- 
+  display: flex; 
 }
 .form-control{
   width: 400px;
@@ -455,7 +565,6 @@ html {
   font-size: 1.125rem;
   padding: 5px;
 }
-
 .form-goup{
   width: 700px;
 }
@@ -469,8 +578,7 @@ html {
   visibility: hidden;
 }
 .btn{
-  text-align: center;
-  
+  text-align: center;  
 }
 .btn-sub{
   padding: 10px 25px;
@@ -485,8 +593,35 @@ html {
 .btn-sub:hover{
   color: #639bf1;
   background: var(--blue3);
-  
 }
+@media(max-width:1190px){
+  .contact-form{
+    flex-direction: column;
+    justify-content: center;    
+  }
+}
+@media (max-width:992px){  
+  .contact{
+    flex-direction: column;
+  }
+  .form-control{
+    width:auto;
+  }
+  .form-control-g{
+    width: 100%;
+  }
+  .email-form{
+    width: 80%;
+  }
+  .name{
+    flex-direction: column;   
+  }
+  .your{
+    width: 800px;
+  }
+}
+
+/* Footer section */
 footer{
   text-align: center;
   background: #393939;
@@ -497,4 +632,15 @@ footer{
 .copyright{
   margin-top: 1rem;
   padding-bottom: 1rem;
+}
+@media (max-width:992px) {
+  footer h1{
+    font-size:1.25rem;
+  }
+  footer p{
+    font-size: 12px;
+  }
+  .copyright{
+    font-size: 12px;
+  }
 }
