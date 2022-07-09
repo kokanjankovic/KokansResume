@@ -509,13 +509,37 @@ html {
 /* Portfolio section */
 #portfolio{
   margin-top: 3rem;
-  height: 100vh;
+  height: auto;
   max-width: 1400px;
 }
 .portfolio{
   position: relative;
   margin-left: 150px;
 }
+.portfolio-content{
+  position: relative;
+  margin-left: 150px;
+  width: 50%;
+  display: flex;
+  
+}
+.portfolio-item img{
+  width: 600px;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #393939; 
+  transition: 0.3s;
+}
+.portfolio-item img:hover{
+  transform: scale(1.1);
+}
+@media (max-width:992px) {
+  .portfolio-content{
+    flex-direction: column;
+   
+  }
+}
+
 
 /* Contact section */
 #contact{
