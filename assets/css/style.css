@@ -293,25 +293,32 @@ html {
 #myProgress{ 
   width: 500px;
   border: 1px solid rgba(0,0,0,0.1);
-  background: #fff;
+  background: #f7f7f7;
   border-radius: 10px;
   box-shadow: 3px 3px 10px #393939; 
   padding: 0 2rem 2rem 2rem;
   margin-right:2rem;
   
 }
+.cont{
+  background: #ddd;
+  width: 100%;
+}
 #myProgress p{
   margin-top: 1rem;  
 }
 #myBar-html,#myBar-css, #myBar-js, #myBar-sass, #myBar-bootstrap,
-#myBar-figma, #myBar-webflow, #myBar-sass{ 
-  height: 10px;
+#myBar-figma, #myBar-webflow, #myBar-ps-il{ 
+  height: 20px;
   background-color: #3b5998;
   margin-top: 0.5rem;
-  box-shadow: 3px 3px 5px #000;   
+  color: #fff; 
+  text-align: right; 
+  padding: 5px;   
 }
 #myBar-html{
-  width: 100%;  
+  width: 100%; 
+   
 }
 #myBar-css{
   width: 95%;
@@ -319,13 +326,19 @@ html {
 #myBar-js{  
     width: 75%;   
 }
+#myBar-sass{
+  width: 70%;
+}
+
 #myBar-bootstrap{
   width: 80%;
 }
-#myBar-figma, #myBar-webflow, #myBar-sass{
+#myBar-figma, #myBar-webflow {
   width: 50%;
 }
-
+#myBar-ps-il{
+  width: 60%;
+}
 
 /* Resume section */
 #resume{
