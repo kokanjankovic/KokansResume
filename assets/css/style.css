@@ -559,9 +559,7 @@ html {
   box-shadow: 3px 3px 10px #393939; 
   transition: 0.3s;
 }
-.portfolio-item img:hover{
-  transform: scale(1.1);
-}
+
 @media (max-width:992px) {
   .portfolio-content{
     flex-direction: column;
