@@ -673,17 +673,18 @@ html {
 }
 .portfolio-item{
   position: relative;
+  width: 100%;
 }
 
 .portfolio-item:hover::before{
   content:"";
   position: absolute;
   background: rgba(255,255,255,0.8);
-  width: 500px;
-  height: 315px;
+  width: 90%;
+  height: 90%;
   border-radius: 10px;
-  top: 2rem;
-  left: 2rem;
+  top: 1rem;
+  left: 1rem;
   z-index: 100;
 }
 .portfolio-info{
@@ -701,8 +702,8 @@ html {
 }
 .portfolio-item img{
   position: relative;
-  width: 300px;
-  margin: 2rem;
+  width: 90%;
+  margin: 1rem;
   border-radius: 10px;
   box-shadow: 3px 3px 10px #393939; 
   transition: 0.3s;
@@ -718,9 +719,12 @@ html {
     margin-left: 1rem;
   }
   .portfolio-content{
-    margin-left: 1rem;
+    margin-left: 0;
     width: 100%;
     align-items: center;
+  }
+  .portfolio-item img{
+    width:80%;
   }
 }
 
