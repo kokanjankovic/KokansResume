@@ -263,6 +263,7 @@ html {
   text-align: center;
   font-size: 1.5rem;
   max-width: 1400px;
+  margin-right: 1rem;
   color: #393939;
 }
 .mycard{
@@ -291,6 +292,7 @@ html {
 }
 .occupation-text{
   font-size: 1.25rem;
+  
 }
 .occupation-data{
   margin: 1rem 0 2rem 0;
@@ -300,7 +302,7 @@ html {
   width: 50vw;
 }
 .occupation-data ul{
-  margin: 0 3rem;
+  margin: 0 2rem;
 }
 .occupation-data ul li{
   font-size: 1.125rem;
@@ -327,12 +329,18 @@ html {
   }
   .occupation-data{
     display: flex;
-    width:auto;
-    justify-content: center;
+    width:auto;   
+    flex-direction: column;
   }
-  .occupation-text{
+  .mycard-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .occupation-text{   
    
     font-size: 1rem;
+    margin-left: 100px;
     text-align: center;    
   }  
 }
@@ -432,7 +440,8 @@ html {
 .skills p, .resume p, .portfolio p{
   max-width: 1400px;
   text-align: center;
-  font-size: 1.5rem;  
+  font-size: 1.5rem; 
+  margin-right: 1rem; 
 }
 .myskills{
   display: flex;
@@ -642,8 +651,9 @@ html {
 .portfolio-content{
   position: relative;
   margin-left: 150px;
-  width: 50%;
+  width: 80%;
   display: flex;
+  align-items: center;
   
 }
 .portfolio-item{
@@ -683,7 +693,7 @@ html {
   transition: 0.3s;
 }
 
-@media (max-width:992px) {
+@media (max-width:768px) {
   .portfolio-content{
     flex-direction: column;   
   }
@@ -714,6 +724,7 @@ html {
 }
 .contact-form{
   display: flex;
+  max-width: 1400px;
   
 }
 .info{
@@ -737,23 +748,27 @@ html {
   display: flex;
   flex-direction: column;
 }
-.contact-mail{
-  width: 830px;
+.contact-mail, .name{
+  width: 90%;
+}
+.your{
+  width: 90%;
 }
 .name{
-  display: flex; 
+  display: flex;
+  width: 95%; 
 }
 .form-control{
-  width: 400px;
+  width: 90%;
   margin: 0.5rem;
   font-size: 1.125rem;
   padding: 5px;
 }
 .form-goup{
-  width: 700px;
+  width: 80%;
 }
 .form-control-g{
-  width: 100%;
+  width: 90%;
   margin: 0.5rem;
   font-size: 1.125rem;
   padding: 5px;
@@ -789,19 +804,14 @@ html {
     flex-direction: column;
   }
   .form-control{
-    width:auto;
+    width:90%;
   }
-  .form-control-g{
-    width: 50%;
-  }
-  .email-form{
-    width: 80%;
-  }
+ 
   .name{
     flex-direction: column;   
   }
   .your{
-    width: 800px;
+    width: 100%;
   }
 }
 @media (max-width:480px){
