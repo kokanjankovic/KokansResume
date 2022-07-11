@@ -352,7 +352,8 @@ html {
     font-size: 1rem;
   } 
   .occupation{
-    margin-top: 1rem;   
+    margin-top: 1rem;
+    font-size: 1.5rem;   
   }  
   .occupation-text{
     font-size: 1rem;   
@@ -363,6 +364,9 @@ html {
   .occupation-data{
     width: auto;
     justify-content: end ;
+  }
+  .occupation-data ul li{
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
@@ -393,6 +397,7 @@ html {
   }
   .occupation{
     margin-top: 1rem;
+    font-size: 1.25rem;
   
   }
   .occupation-data{
@@ -412,6 +417,9 @@ html {
   .about, .mycard, .mycard-text{
   margin-left: 0;
   }
+  .occupation{
+    font-size: 1.125rem;
+  }
   .occupation-data{
     display: flex;
     flex-direction: column;
@@ -422,7 +430,11 @@ html {
     margin-right: 0;
   }
   .occupation-text{
-    margin-left: 1rem;
+    margin-left: 0;
+    font-size: 0.85rem;
+  }
+  .occupation-data ul li{
+    font-size: 0.85rem;
   }
 }
 
