@@ -19,3 +19,7 @@ able to work under pressure. </p>
               <li><strong>Freelance:</strong> Available</li>
             </ul>
 <h4>Now I want to try myself as a freelancer, maybe, who knows, and as a full-time programmer. My goal is full stack developer.</h4>
+<br>
+<h4>Chingu Voyage 39 project: </h4>
+https://kokanj.github.io/Toucan02/
+
