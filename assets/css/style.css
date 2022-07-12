@@ -150,6 +150,9 @@ html {
   .navbar li{
     margin: 15px 0 !important;
   }
+  .navbar-mobille.navbar-mobille.active{
+    height: 365px;
+  }
 }
 @media (max-width: 480px){
  
