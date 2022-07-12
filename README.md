@@ -23,5 +23,5 @@ able to work under pressure. </p>
 <h4>Chingu Voyage 39 project: </h4>
 https://kokanj.github.io/Toucan02/
 
-<img src="![image](https://user-images.githubusercontent.com/108945169/178613330-67a1e4ef-a949-4db8-b37e-87c43d1e8f9d.png)">
+<img src="https://user-images.githubusercontent.com/108945169/178613330-67a1e4ef-a949-4db8-b37e-87c43d1e8f9d.png)">
 
