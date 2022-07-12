@@ -18,3 +18,4 @@ able to work under pressure. </p>
               <li><strong>E-mail:</strong>kokan.jankovic@gmail.com</li>
               <li><strong>Freelance:</strong> Available</li>
             </ul>
+<h4>Now I want to try myself as a freelancer, maybe, who knows, and as a full-time programmer. My goal is full stack developer.</h4>
