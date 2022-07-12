@@ -51,7 +51,7 @@ html {
   line-height: 90px;
   color: #393939;
   font-size: 40px;
-  margin-left: 150px;
+  margin-left: 50px;
   z-index: 100;
 }  
 .holder-job {
@@ -102,7 +102,7 @@ html {
   font-size: 80px;
   font-weight: 700;
   color: #393939;
-  margin-left: 150px;
+  margin-left:50px;
   z-index: 100;    
 }
 .header p{
@@ -147,20 +147,17 @@ html {
   .header h1{
     font-size: 2rem;
   }    
+  .navbar li{
+    margin: 15px 0 !important;
+  }
 }
 @media (max-width: 480px){
-  #navbar{
-    display: none;
-  }
+ 
   .header h1{
     font-size: 1.5rem;
   }  
-  .header-text,.holder-text{
-    margin-left: 50px;
-  }
-  .social-links{
-    margin-left: 50px !important;
-  }
+ 
+  
 }
 
 /* Navbar */
@@ -169,7 +166,7 @@ html {
     top: 0;
     left: 0;
     flex-wrap: wrap;    
-    z-index: 1000;
+    z-index: 100;
 }
 .navbar{
     margin: 50px 15px;
@@ -209,7 +206,7 @@ html {
     font-size: 1.5rem;   
 }
 .social-links {
-    margin-left: 150px;
+    margin-left: 50px;
     font-size: 2rem;
     display: flex;
     flex-direction: row;
@@ -218,6 +215,60 @@ html {
 .social-links a{
   color: #3b5998;
 }
+.navbar-mobille{
+  position:sticky;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.8);
+  transition: width 0.5s, height 0.5s;
+  transition-delay: 0s, 0.75s;
+  z-index: 10000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.navbar-mobille.active{
+  width: 150px;
+  height: 500px;
+  transition: width 0.5s, height 0.5s;
+  transition-delay: 0s, 0.75s;
+}
+.navbar-mobille-btn{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #3b5998;
+  transition: 0.5s;   
+  cursor: pointer;
+}
+.navbar-mobille-btn.active{
+  background: #639bf1;
+
+}
+.navbar-mobille-btn::before{
+  content: "+";
+  position: absolute;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.navbar-mobille-btn.active::before{
+  transform: rotate(315deg);
+}
+
+
 
 /* Line after header h1 */
 .line{
@@ -227,7 +278,7 @@ html {
   height: 1px;
   top: 4rem;
   background: #6e6e6e;
-  left: 42%;
+  left: 39%;
 }
 .line::after{
   content: "";
@@ -244,11 +295,11 @@ html {
   margin-top: 3rem; 
 }
 .about{
-  margin-left: 150px;
+  margin-left: 50px;
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  
 }
 .about h1, .skills h1, .resume h1, .portfolio h1, .contact h1{ 
   max-width: 1400px;
@@ -270,7 +321,7 @@ html {
   color: #393939;
 }
 .mycard{
-  margin-left: 150px;
+  margin-left: 50px;
   display: flex;
   margin-top: 2rem;
   color: #393939;
@@ -343,7 +394,7 @@ html {
   .occupation-text{   
    
     font-size: 1rem;
-    margin-left: 100px;
+    margin-left: 50px;
     text-align: center;    
   }  
 }
@@ -359,7 +410,7 @@ html {
     font-size: 1rem;   
   }
   .mycard-text{
-    margin-left: 150px;
+    margin-left: 50px;
   }
   .occupation-data{
     width: auto;
@@ -407,7 +458,7 @@ html {
     justify-content: center;
   }
   .occupation-text{
-    margin-left: 150px;
+    margin-left: 50px;
     font-size: 1rem;
     text-align: center;  
     left: 0;  
@@ -441,12 +492,13 @@ html {
 /* Skills section */
 #skills{
   height: auto;
+  margin-top: 3rem;
   background: rgba(0,0,0,0.05);
   overflow-x: hidden;  
 }
 .skills{ 
-  margin-left: 150px;
-  margin-top: 3rem;
+  margin-left: 50px;
+  
   padding-top: 1rem;
   position: relative;
   display: flex;
@@ -460,7 +512,7 @@ html {
 }
 .myskills{
   display: flex;
-  margin-left: 150px;
+  margin-left: 50px;
   max-width: 1400px;
   padding: 3rem 0;
   justify-content: center;
@@ -563,7 +615,7 @@ html {
   height: auto;   
 }
 .resume{ 
-  margin-left: 150px;
+  margin-left: 50px;
   margin-top: 3rem;
   padding-top: 1rem;
   position: relative;
@@ -572,7 +624,7 @@ html {
 }
 .resume-container{
   max-width: 1400px;
-  margin-left: 150px;
+  margin-left: 50px;
   margin-top: 2rem;
   display: flex;
 }
@@ -661,11 +713,11 @@ html {
 }
 .portfolio{
   position: relative;
-  margin-left: 150px;
+  margin-left: 50px;
 }
 .portfolio-content{
   position: relative;
-  margin-left: 150px;
+  margin-left: 50px;
   width: 80%;
   display: flex;
   align-items: center;
@@ -736,7 +788,7 @@ html {
 }
 .contact{
   margin-top: 3rem;
-  margin-left: 150px;
+  margin-left: 50px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -838,10 +890,10 @@ html {
     margin-left: 1rem;
   }
   .form-control{
-    width: 100%;
+    width: 80%;
   }
   .form-control-g{
-    width:100%;
+    width:80%;
   }
   .contact-mail{
     width: 100%;

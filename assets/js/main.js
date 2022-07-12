@@ -7,3 +7,9 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
 });
  
+// Navbar mobille button and menu
+const navigation = document.querySelector(".navbar-mobille");
+document.querySelector('.navbar-mobille-btn').onclick = function(){
+  this.classList.toggle('active');
+  navigation.classList.toggle('active');
+}
