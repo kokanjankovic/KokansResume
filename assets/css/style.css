@@ -560,7 +560,10 @@ html {
 #myBar-bootstrap{
   width: 80%;
 }
-#myBar-figma, #myBar-webflow {
+#myBar-webflow {
+  width: 80%;
+}
+#myBar-figma {
   width: 50%;
 }
 #myBar-ps-il{
